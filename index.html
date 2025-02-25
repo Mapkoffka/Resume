@@ -6,23 +6,46 @@
     <meta name="keywords" content="Сергей, cv, resume">
     <meta name="description" content="Это мой первый сайт-резюме по бесплатному курсу HTML">
     <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="photo/ava.jpg" alt="аватарка из ВК"width="220">
-    <h1>Жданов Сергей Владимирович</h1>
-
-<p><strong>Добрый день!</strong> Меня зовут Сергей, мне  34 года</p>
-<p>10 лет успешной работы в продажах и работе с клиентами в сфере <em>банкротсва физических лиц</em></p>
-<br>
-<h3>Мой опыт работы</h3>
-<table width="500">
-    <thead>
+    <div class="container">
+    <div class="info">
+        <img src="photo/ava.jpg" alt="аватарка из ВК" class="avatar">
+        <div class="info-text">
+        <h1>Жданов Сергей Владимирович</h1>
+        <p><strong>Добрый день!</strong> Меня зовут Сергей, мне  34 года.</p>
+        <p>У меня 10 лет успешной работы в продажах и работе с клиентами в сфере <em>банкротсва физических лиц.</em></p>
+    
+    <br>
+    <div class="card">
+        <h4>Список социальных сетей:</h4>
+        <a href="https://vk.com/id5247911" target="_blank">VK</a>
+        <a href="https://t.me/ZhdanovSV74" target="_blank">Telegram</a>
+        </div>
+        
+    </div>
+    </div>
+    <br>
+    <div class="card bg-yellow">
+    <h3>Мои хобби:</h3>
+    <ul class="list">
+        <li>Езда на велосипеде</li>
+        <li>Видеоигры</li>
+        <li>Книги</li>
+    </ul>
+    </div>
+    
+<div class="card bg-red">
+    <h3>Мой опыт работы:</h3>
+<table class="table">
+    <!-- <thead>
         <tr>
         <th>Работодатель</th>
         <th>Должность</th>
-        <th width="90">Год</th>
+        <th>Год</th>
         </tr>
-    </thead>
+    </thead> -->
     <tbody>
         <tr>
             <td>Колос</td>
@@ -35,43 +58,42 @@
             <td> 2016-2020</td>
         </tr>
         <tr>
-            <td>Максимальная защита</td>
+            <td >Максимальная защита</td>
             <td>Менеджер по продажам и работе с клиентами</td>
             <td>2020-по н.в.</td>
         </tr>
     </tbody>
 </table>
-<br>
-<h4>Мои хобби:</h4>
-<ul>
-    <li>Езда на велосипеде</li>
-    <li>Видеоигры</li>
-    <li>Книги</li>
-</ul>
+</div>
+<div>
+    <h2>Курсы:</h2>
+    <ul class="link-list">
+        <li> <a href="https://result.school/" target="_blank">Обучение в онлайн-школе Result Univesity по курсу "Джуниор Frontend-разработчик"</a></li>
+        
+    </ul>
+</div>
 
-<hr>
-<h4>Список социальных сетей:</h4>
-<a href="https://vk.com/id5247911" target="_blank">VK</a>
-<a href="https://t.me/ZhdanovSV74" target="_blank">Telegram</a>
 
 <br>
 <br>
+<form action="/" class="form">
 <h2>Связаться со мной</h2>
-<form>
-<div>
-    <label for="text">Ваше имя:</label>
-    <input type="text" id="text" placeholder="Введите текст">
+<div class="form-row">
+    <div class="form-group">
+        <label for="text">Ваше имя:</label>
+        <input type="text" id="text" placeholder="Введите текст">
+    </div>
+    <div class="form-group">
+        <label for="email">Ваш email:</label>
+        <input type="email" id="email" placeholder="Введите email">
+    </div>
 </div>
-<div>
-    <label for="email">Ваш email:</label>
-    <input type="email" id="email" placeholder="Введите email">
-</div>
-<div>
+<div class="form-group">
     <label for="message">Ваше сообщение:</label>
-    <br>
     <textarea id="message" cols="30" rows="5" placeholder="Введите сообщение..."></textarea>
 </div>
-    <button type="submit">Отправить</button>
+    <button type="submit" class="btn">Отправить</button>
 </form>
-</body>
+</div>
+</body> 
 </html>
